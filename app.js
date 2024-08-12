@@ -62,5 +62,7 @@ function mainLoop(result) {
 	getConfirmationFromUserAndContinue(newResult);
 }
 
-var result = getNumberFromUser();
-getConfirmationFromUserAndContinue(result);
+function start() {
+	var result = getNumberFromUser();
+	getConfirmationFromUserAndContinue(result);
+}
