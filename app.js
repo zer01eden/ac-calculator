@@ -5,7 +5,13 @@ function showResult(result) {
 }
 function getNumberFromUser() {
 	var input = prompt('Add number:', 'only number');
-	return Number(input);
+	var number = Number(input);
+
+	if (Number.isNaN(number)) {
+		return getNumberFromUser();
+	} else {
+		return number;
+	}
 }
 function getOperatorFromUser() {
 	return prompt('Add operator: +, -, *, /');
