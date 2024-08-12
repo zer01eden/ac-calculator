@@ -14,7 +14,19 @@ function getNumberFromUser() {
 	}
 }
 function getOperatorFromUser() {
-	return prompt('Add operator: +, -, *, /');
+	var operator = prompt('Add operator: +, -, *, /');
+	switch (operator) {
+		case '+':
+			return operator;
+		case '-':
+			return operator;
+		case '*':
+			return operator;
+		case '/':
+			return operator;
+		default:
+			return getOperatorFromUser();
+	}
 }
 function getConfirmationFromUser() {
 	return confirm('Do you want to continue?');
